@@ -46,10 +46,14 @@ const consumir = async () => {
     objeto.value._value.forEach(element => {
         if (username.value == element.first_name && password.value == element.senha) {
             userLogado.value = element;
-            return navigateTo('/home')         }
+            return navigateTo('/home')
+        }
+    }
+    
+    );
+    return alert('usuario invalido')
 
-        return console.log('nao logado');
-    });
+
 }
 </script>
 
