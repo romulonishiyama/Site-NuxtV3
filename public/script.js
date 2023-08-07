@@ -1,1 +1,1 @@
-export const minhaVariavel = []
+export const minhaVariavel = 'ola export '

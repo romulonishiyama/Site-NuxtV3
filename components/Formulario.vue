@@ -17,8 +17,7 @@
                                     <label for="password">Senha:</label>
                                     <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
-                                <button type="submit" @click.prevent="dados()"
-                                    class="btn btn-primary btn-block">Login</button>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
                             </form>
                             <div class="mt-3">
                                 <p>Não tem uma conta? <a href="#">Novo Cadastro</a></p>
@@ -28,34 +27,30 @@
                     </div>
                 </div>
             </div>
-            {{ minhaVariavel }}
         </div>
-
-
+        <button @click.prevent="consumir">enviar</button>
+        <h1>{{ userLogado }}</h1>
     </div>
 </template>
 
 <script lang="ts" setup>
 import axios from 'axios';
-import { minhaVariavel } from '../public/script';
-var senha = ref('123123')
-console.log(typeof minhaVariavel)
-async function dados() {
-    const d = (await axios.get('api.js')).data;
-    console.log(typeof d)   
-    
+
+const objeto = ref();
+const userLogado = ref();
+
+const consumir = async () => {
+    const api = await axios.get('api.js')
+    objeto.value = ref(api.data);
+
+    objeto.value._value.forEach(element => {
+        if (username.value == element.first_name && password.value == element.senha) {
+            userLogado.value = element;
+            return navigateTo('/home')         }
+
+        return console.log('nao logado');
+    });
 }
-
-
 </script>
-<script lang="ts">
 
-export default {
-    data() {
-        return {
-            nomes: []
-        }
-    }
-}
 
-</script>
