@@ -17,7 +17,8 @@
                                     <label for="password">Senha:</label>
                                     <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <button type="submit" @click.prevent="dados()"
+                                    class="btn btn-primary btn-block">Login</button>
                             </form>
                             <div class="mt-3">
                                 <p>Não tem uma conta? <a href="#">Novo Cadastro</a></p>
@@ -27,11 +28,34 @@
                     </div>
                 </div>
             </div>
+            {{ minhaVariavel }}
         </div>
+
+
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
+import axios from 'axios';
+import { minhaVariavel } from '../public/script';
+var senha = ref('123123')
+console.log(typeof minhaVariavel)
+async function dados() {
+    const d = (await axios.get('api.js')).data;
+    console.log(typeof d)   
+    
+}
 
+
+</script>
+<script lang="ts">
+
+export default {
+    data() {
+        return {
+            nomes: []
+        }
+    }
+}
 
 </script>

@@ -1,7 +1,6 @@
 <template>
-    <h1>HOME</h1>
+    <h1>Contato</h1>
 </template>
-
 <script lang="ts" setup>
 
 definePageMeta({

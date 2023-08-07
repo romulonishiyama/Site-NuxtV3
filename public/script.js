@@ -1,1 +1,1 @@
-export const minhaVariavel = 'Ola, mundo!'
+export const minhaVariavel = []
