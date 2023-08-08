@@ -1,12 +1,17 @@
 <template>
     <div>
-        <Formulario />
+        <Formulario/>
+
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 
 definePageMeta({
-    layout: 'autenticacao'
+    layout: 'autenticacao',
 })
+
 </script>
+
+
+

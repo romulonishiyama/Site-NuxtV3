@@ -1,9 +1,7 @@
 <template>
-    <h1>HOME</h1>
+    {{ rout.params.id }}
 </template>
-
 <script lang="ts" setup>
-
-
+const rout = useRoute();
 
 </script>

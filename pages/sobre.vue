@@ -1,9 +1,8 @@
 <template>
 <h1>
-    SOBRE
+    Sobre
 </h1>
 </template>
 
 <script setup>
-
 </script>
