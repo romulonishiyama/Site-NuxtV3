@@ -29,30 +29,18 @@
             </div>
         </div>
         <button @click.prevent="consumir">enviar</button>
-        <h1>{{ userLogado }}</h1>
+        <h1></h1>
     </div>
 </template>
 
 <script lang="ts" setup>
-import axios from 'axios';
+definePageMeta ({
+    middleware:['auth']
+})
+import { usuarios } from '../server/api.json'
 
-const objeto = ref();
-const userLogado = ref();
-
-const consumir = async () => {
-    const api = await axios.get('api.js')
-    objeto.value = ref(api.data);
-
-    objeto.value._value.forEach(element => {
-        if (username.value == element.first_name && password.value == element.senha) {
-            userLogado.value = element;
-            return navigateTo('/home')
-        }
-    }
+const consumir = () => {
     
-    );
-    return alert('usuario invalido')
-
 
 }
 </script>

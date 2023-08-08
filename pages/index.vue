@@ -5,4 +5,8 @@
 </template>
 
 <script lang="ts">
+
+definePageMeta({
+    layout: 'autenticacao'
+})
 </script>
