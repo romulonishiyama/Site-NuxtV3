@@ -11,6 +11,10 @@ definePageMeta({
     layout: 'autenticacao',
 })
 
+const appp = useAsyncData();
+
+console.log(appp)
+
 </script>
 
 

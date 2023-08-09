@@ -20,13 +20,16 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-primary">Sair</button>
+                <button type="button" class="btn btn-primary" @click="logout">Sair</button>
             </div>
         </nav>
         <slot></slot>
     </div>
 </template>
 <script lang="ts" setup>
+function logout(){
+    return navigateTo('/logout')
+}
 </script>
 
 <style scoped>
