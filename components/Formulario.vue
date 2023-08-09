@@ -11,13 +11,13 @@
                             <form action="/login">
                                 <div class="form-group">
                                     <label for="username">Usuário:</label>
-                                    <input type="text" class="form-control" id="username" name="username" required>
+                                    <input type="text" class="form-control" id="username" name="first_name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Senha:</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <input type="password" class="form-control" id="password" name="senha" required>
                                 </div>
-                                <button type="submit" @click="logar" class="btn btn-primary btn-block">Login</button>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
                             </form>
                             <div class="mt-3">
                                 <p>Não tem uma conta? <a href="#">Novo Cadastro</a></p>
@@ -34,14 +34,6 @@
 <script lang="ts" setup>
 
 
-defineProps({
-    nome: 'string'
-
-})
-
-const logar = () =>{
-    username.value
-}
 
 
 </script>

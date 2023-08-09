@@ -2,18 +2,16 @@ import users from '../server/api.json'
 const logado = false
 export default defineNuxtRouteMiddleware((to, from) => {
   const r = useRoute()
+
+  const flag = users.usuarios.some((e) => {
+    return (e.senha == r.query.senha) && e.first_name == (r.query.first_name);
+  } 
+  )
   
-  console.log(users.usuarios[0])
+  if(flag){
+    return navigateTo('/home')
+  }
+  return navigateTo('/')
 
 
-
-  // if(r.query.username == '2')
-  // console.log(r.query.username)
-
-  // if(logado) {
-  //   return navigateTo('/home')
-  // }else {
-  //   return navigateTo('/')
-  // }
-  
 })
