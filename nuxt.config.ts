@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     'bootstrap/dist/css/bootstrap.min.css'
   ],
 
- 
+
+
 
 }
 

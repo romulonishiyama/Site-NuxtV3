@@ -1,6 +1,7 @@
 <template>
     <div>
         <Formulario/>
+        <Tailand/>
 
     </div>
 </template>
@@ -11,10 +12,8 @@ definePageMeta({
     layout: 'autenticacao',
 })
 
-const appp = useAsyncData();
 
-console.log(appp)
-
+console.log()
 </script>
 
 
