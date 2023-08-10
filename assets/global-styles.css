@@ -1,6 +1,5 @@
 /* assets/global-styles.css */
 
 body {
-    background-color: cadetblue; /* Cambia el color de fondo a lo que desees */
-  }
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,70,1) 14%, rgba(7,6,89,1) 22%, rgba(9,9,121,1) 35%, rgba(74,17,134,1) 100%);  }
   

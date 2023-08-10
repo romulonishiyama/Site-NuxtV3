@@ -1,6 +1,6 @@
 <template>
-<h1>
-    Sobre
+<h1 class="text-white">
+    Android
 </h1>
 </template>
 

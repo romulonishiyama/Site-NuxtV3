@@ -15,7 +15,6 @@ export default defineAppConfig({
             logout: { url: '/api/auth/logout', method: 'post' },
             user: { url: '/api/auth/user', method: 'get', propertyName: 'user' }
           },
-          // Otros ajustes de estrategia (si es necesario)
         }
       }
     }

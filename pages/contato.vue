@@ -1,5 +1,5 @@
 <template>
-    <h1>Contato</h1>
+    <h1 class="text-white">Contato</h1>
 </template>
 <script lang="ts" setup>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <img src="../public/favicon.ico">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -10,13 +10,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <NuxtLink to="/home" class="nav-link" active-class="active">Home</NuxtLink>
+                            <NuxtLink to="/home" class="nav-link text-white" active-class="active">Home</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink to="/sobre" class="nav-link" active-class="active">Sobre</NuxtLink>
+                            <NuxtLink to="/android" class="nav-link text-white" active-class="active">Android</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink to="/contato" class="nav-link" active-class="active">Contato</NuxtLink>
+                            <NuxtLink to="/japones" class="nav-link text-white" active-class="active">Japonês</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink to="/cafe" class="nav-link text-white" active-class="active">Café</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink to="/discord" class="nav-link text-white" active-class="active">Discord</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink to="/contato" class="nav-link text-white" active-class="active">Contato</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink to="/tsunami" class="nav-link text-white" active-class="active">Tsunami</NuxtLink>
                         </li>
                     </ul>
                 </div>
@@ -36,4 +48,6 @@ function logout(){
 .active {
     border-bottom: 2px solid purple;
 }
+
+
 </style>
