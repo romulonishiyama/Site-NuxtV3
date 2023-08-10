@@ -1,5 +1,4 @@
 <template>
-    {{ route.query }}
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,7 @@
-import users from '../server/api.json'
+import users from '../server/apiUsuarios.json'
 const logado = false
+
+
 export default defineNuxtRouteMiddleware((to, from) => {
   const r = useRoute()
 
