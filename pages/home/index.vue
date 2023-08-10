@@ -78,20 +78,14 @@
 
 <script lang="ts" setup>
 
-const app = useState();
-app.value = '/android'
-const rota = useRouter();
 
 const navegar = async () => {
-    const rotas = await rota._routePreloaded;
-    console.log(rotas)
+
 }
 
+</script>
 
-rota.currentRoute.value.matched[0].path = '/android'
-// rota.path = '/android'
-
-
+<script setup>
 </script>
 
 <style scoped>
