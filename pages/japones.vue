@@ -9,7 +9,6 @@
 const cor = ref('');
 
 const mudarCor = (c: string) => {
-    console.log(c)
     cor.value = c;
 }
 </script>
