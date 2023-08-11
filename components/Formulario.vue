@@ -20,7 +20,7 @@
                                 <button type="submit" class="btn btn-primary btn-block">Login</button>
                             </form>
                             <div class="mt-3">
-                                <p>Não tem uma conta? <a href="#">Novo Cadastro</a></p>
+                                <p>Não tem uma conta? <a href="/home/novousuario">Novo Cadastro</a></p>
                                 <p><a href="#">Esqueceu a Senha</a></p>
                             </div>
                         </div>
