@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     },
 
   },
+  alias: {
+
+  },
 
   runtimeConfig: {
     password: process.env.API_SECRET,
