@@ -11,20 +11,30 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="u in users">
-                    <td>{{ users.indexOf(u) + 1 }}</td>
-                    <td>{{ u.first_name }}</td>
-                    <td><button class="btn btn-primary">Editar</button><button class="btn btn-danger">Deletar</button></td>
+                <tr v-for="us in users">
+                    <td> {{ users.indexOf(us) }} </td>
+                    <td>{{ us.first_name }}</td>
+                    <td><button class="btn btn-primary">Editar</button><button class="btn btn-danger" :id=users.indexOf(us)  @click="removerContato($event)">Deletar</button></td>
                 </tr>
-
+                {{ users }}
             </tbody>
         </table>
 
     </div>
 </template>
 <script lang="ts" setup>
-const users = useUsuarios().usuarios;
 
-console.log(users)
+const users = computed(() => {
+    let u = useUsuarios().usuarios;
+    return u
+})
+
+
+const removerContato = (e) => {
+    let posicao = e.target.id
+    users.value.splice((posicao - 1), 1)
+    console.log(users)
+
+}
 
 </script>

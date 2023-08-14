@@ -20,12 +20,5 @@ function teste(){
     return resultado.value === 'dog'? array[0] : array[1] ;
 
 }
- 
-// const dogComputed = computed(() => {
-    
-//     return resultado.value === 'dog'? array[0] : array[1] ;
-
-// })
-
 
 </script>
