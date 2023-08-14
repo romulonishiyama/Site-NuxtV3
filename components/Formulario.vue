@@ -8,14 +8,14 @@
                             <h4>Formulário de Login</h4>
                         </div>
                         <div class="card-body">
-                            <form action="/login">
+                            <form>
                                 <div class="form-group">
                                     <label for="username">Usuário:</label>
-                                    <input type="text" class="form-control" id="username" name="first_name" required>
+                                    <input type="text" class="form-control" id="username" name="username" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Senha:</label>
-                                    <input type="password" class="form-control" id="password" name="senha" required>
+                                    <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">Login</button>
                             </form>
@@ -28,16 +28,21 @@
                 </div>
             </div>
         </div>
+        <button @click.prevent="consumir">enviar</button>
+        <h1></h1>
     </div>
 </template>
 
 <script lang="ts" setup>
+definePageMeta ({
+    middleware:['auth']
+})
+import { usuarios } from '../server/api.json'
 
+const consumir = () => {
+    
 
-
-
+}
 </script>
-
-
 
 
