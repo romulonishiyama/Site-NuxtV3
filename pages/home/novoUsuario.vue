@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-5">
-        <form action="/login/novousuario" method="post" @submit="cadastrar">
+        <form action="/login/novousuario" method="post" >
             <div class="mb-3">
                 <label for="nome" class="form-label text-white">Nome</label>
                 <input type="text" class="form-control" id="nome" name="nome" required>
