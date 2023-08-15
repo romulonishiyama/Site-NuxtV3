@@ -15,7 +15,7 @@
                     <td> {{ index + 1 }} </td>
                     <td>{{ us.first_name }}</td>
                     <td>
-                        <button class="btn btn-primary">Editar</button>
+                        <button class="btn btn-primary" :id="index" @click="editarContato($event)">Editar</button>
                         <button class="btn btn-danger" :id="index" @click="removerContato($event)">Deletar</button>
                     </td>
 
@@ -25,13 +25,16 @@
     </div>
 </template>
 <script lang="ts" setup>
-
-let u = ref(0)
+let u = ref('')
 const users = computed(() => {
     u.value = useUsuarios().usuarios;
-    console.log(u.value)
     return u.value
 })
+
+const editarContato = (e) => {
+    let posicao = e.target.id;
+    console.log(u.value)
+}
 
 const removerContato = (e) => {
     let posicao = e.target.id
