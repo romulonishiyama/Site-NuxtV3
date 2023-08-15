@@ -17,10 +17,10 @@
 const dogsApi = ref()
 
 const dogs = async () => {
-    // const dogsConvertido = await $fetch('https://dog.ceo/api/breed/akita/images')
-    const dogsConvertido =  useFetch('https://dog.ceo/api/breed/akita/images')
+    const dogsConvertido = await $fetch('https://dog.ceo/api/breed/akita/images')
+    // const dogsConvertido =  useFetch('https://dog.ceo/api/breed/akita/images')
 
-    dogsApi.value = dogsConvertido
+    dogsApi.value = dogsConvertido.message
     console.log(dogsConvertido)
     return dogsConvertido
 }
