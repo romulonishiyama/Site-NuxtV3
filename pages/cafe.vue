@@ -1,10 +1,11 @@
 <template>
     <div>
         <h1 class="text-white">Café</h1>
-        <Formulario/>
+        <hr>
+        <Pai/>
     </div>
 </template>
 <script lang="ts" setup>
-defineProps
-console.log()
+// defineProps
+
 </script>
