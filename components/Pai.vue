@@ -1,14 +1,16 @@
 <template>
     <div>
         <h1 class="text-white">Pai</h1>
-        <Filho :nome="filho"/>
         
+
+        <Filho @imprimir="msg"/>
+
     </div>
 </template>
 
 <script lang="ts" setup>
-const filho = ref('bulma')
-
-
+const msg = () => {
+    console.log('em emits')
+}
 
 </script>
